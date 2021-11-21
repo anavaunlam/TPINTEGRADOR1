@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/contacto.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <div class="img_header">
+            <img src="../TP INTEGRADOR/img/tesol_ngl_logo.png" alt="logo" width="300">
+        </div>
+        <div>
+            <p>LEARNING TOGETHER</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/natgeola" target="_blank"><img src="../TP INTEGRADOR/img/face.png"
+                    alt="face"></a>
+            <a href="https://www.instagram.com/natgeo.la/" target="_blank"><img src="./img/insta.png" alt="insta"></a>
+            <a href="http://twitter.com/NatGeo_la" target="_blank"><img src="../TP INTEGRADOR/img/twitter2.png"
+                    alt="twitter"></a>
+        </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">INICIO</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html" target="_blank">INSCRIPCIÓN</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html" target="_blank">ESTABLECIMIENTOS</a>
+                </li>
+                <li>
+                    <a href="calendario_cursos.html" target="_blank">CALENDARIO</a>
+                </li>
+                <li>
+                    <a href="contacto.html" target="_blank">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" target="_blank">NOSOTROS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="pag_contact">
+            </article>
+        </section>
+        <section class="contacto_main">
+            <article class="consulta">
+                <h3>Déjanos todas tus dudas aqui</h3>
+                <form action="#" method="post" id="form">
+
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
+                    <div id="mensajenombre"></div>
+
+                    <label for="apellido"></label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <div id="mensajeapellido"></div>
+                    
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@correo.com">
+                    <div id="mensajeemail"></div>
+                    
+                    <label for="tel"></label>
+                    <input type="tel" name="tel" id="tel" placeholder="0800-4444">
+                    <div id="mensajetel"></div>
+        
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="consulta" cols="30" rows="10" placeholder="Dejenos su mensaje"></textarea>
+                    <div class="contador"><p id="caracteresactuales"></p><p id="caracteresrestantes"></p></div>
+                    <div id="mensajeconsulta"></div>
+
+                    <div class="boton_position2">
+                        <button class="boton2" id="enviado" type="submit">Enviar</button>
+                    </div>
+                </form>
+                <div class="popup">
+                    <img src="img/exito.png" alt="">
+                    <p class="exito">Su mensaje fue enviado con exito!</p>
+                    <p class="detalle">Nos contactaremos con usted a la brevedad</p>
+                    <button class="boton2" id="cerrar">cerrar</button>
+                </div>
+            </article>
+            <article class="datos">
+                <h3>Reúnase con nosotros aquí.</h3>
+                <div>
+                    <img class="tel" src="../TP INTEGRADOR/img/tel.png" alt="tel">
+                    <h4>Teléfono</h4>
+                    <p>+7 (800) 123 45 69</p>
+                </div>
+                <div>
+                    <img class="mail" src="../TP INTEGRADOR/img/mail2.png" alt="mail">
+                    <h4>Email</h4>
+                    <p>nationalgeographic@bsas.gob</p>
+                </div>
+                <div>
+                    <img class="dir" src="../TP INTEGRADOR/img/dire2.png" alt="dir">
+                    <h4>Dirección</h4>
+                    <p>Florencio Varela 1903, San Justo</p>
+                </div>
+            </article>
+        </section>
+        <section class="ubicacion">
+            <article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3699819812578!2d-58.5648951847687!3d-34.67061058044219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1632422669942!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </section>
+        <a href="#inicio" class="arriba">Volver arriba</a>
+    </main>
+    <footer>
+        <aside class="contenedor_footer">
+            <div class="imagen_footer">
+                <img src="../TP INTEGRADOR/img/tesol_ngl_logo.png" alt="certi">
+            </div>
+            <div class="item">
+                <h3>Datos del grupo:</h3>
+                <p>Agustin Ezequiel Nava - 43.516.284</p>
+                <p>Agostina Jacqueline Herdeiro - 44.824.992</p>
+                <p>Candela Petrollini - 42.595.790</p>
+            </div>
+            <div class="item">
+                <nav class="menu_inf">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="inscripcion.html" target="_blank">INSCRIPCIÓN</a>
+                        </li>
+                        <li>
+                            <a href="establecimientos.html" target="_blank">ESTABLECIMIENTOS</a>
+                        </li>
+                        <li>
+                            <a href="calendario_cursos.html" target="_blank">CALENDARIO</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" target="_blank">CONTACTO</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" target="_blank">NOSOTROS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="redes">
+                <a href="./contacto.html" target="_blank"
+                    rel="noopener noreferrer"><button class="boton_contact">contactanos</button></a>
+                <h3>Redes Sociales</h3>
+                <a href="https://www.facebook.com/natgeola" target="_blank"><img src="./img/face.png" alt="face"></a>
+                <a href="https://www.instagram.com/natgeo.la/" target="_blank"><img src="./img/insta.png"
+                        alt="insta"></a>
+                <a href="http://twitter.com/NatGeo_la" target="_blank"><img src="../TP INTEGRADOR/img/twitter2.png"
+                        alt="twitter"></a>
+            </div>
+        </aside>
+    </footer>
+</body>
+
+</html>

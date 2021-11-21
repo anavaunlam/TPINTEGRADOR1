@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 70%;
+}
+header{
+    border-bottom: solid;
+    border-color: white;
+    background-color: #2D9999;
+}
+header div{
+    width: calc(40%);
+    position: relative;
+}
+a.desplegable{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/hamburger.gif);
+    position:absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+.menu{
+    display:none;
+}
+header p{
+    display: none;
+}
+.img_header img{
+    max-width: 150%;
+    padding-left: 0.1em;
+}
+.redes{
+    display: none;
+}
+.menu{
+    position: relative;
+    bottom: 1.5em;
+}
+.menu li{
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    color: white;
+}
+.menu a:hover{
+    color: #ffd700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+footer{
+    color: white;
+    font-family: fantasy;
+}
+footer h3{
+    text-align: center;
+    margin: 1em 0em;
+    font-size: 1.5em;
+    color: rgb(255, 247, 247);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.contenedor_footer{
+    padding: 0em 2em;
+    background-color: #2D9999;
+}
+.datos_footer p{
+    text-align: left;
+}
+.contenedor_footer div{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+.boton_contact{
+    background-color: #ffd700;
+    border-color: #ffd700;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 1em;
+    transition: 1s;
+}
+.boton_contact:hover{
+    border-color: #ffd700;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
+}
+.imagen_footer img{
+    width: 100%;
+}
+.menu_inf li{
+    list-style: none;
+    margin: 0.5em;
+}
+.menu_inf a{
+    text-decoration: none;
+    color:  white;
+}
+.menu_inf a:hover{
+    text-decoration: underline;
+}
+.redes_footer{
+    padding-bottom: 3em;
+}
+.redes_footer img{
+    width: 20%;
+}
+.arriba{
+    display: block;
+    background-color: #ffd700;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-family: montserrat, sans-serif;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 2em;
+}
+@media screen and (min-width:47em){
+body{
+    font-size: 90%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: white;
+    background-color: #2D9999;
+}
+header div{
+    width: calc(30%);
+    position: relative;
+}
+.img_header img{
+    max-width: 100%;
+    padding-left: 1em;
+}
+header p{
+    display: block;
+    text-align: center;
+    font-family: fantasy;
+    padding: 0.1em 0em;
+    font-size: 3em;
+    color: #ffd700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.redes{
+    display: block;
+    text-align: end;
+}
+.redes img{
+    width: 60px;
+    border-radius: 1em;
+    box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    transition: 0,3s;
+}
+a.desplegable{
+    display: none;
+}
+.menu{
+    display: block;
+    position: relative;
+    bottom: 0.5em;
+    padding: 1em;
+    text-align: center;
+    background-color: #2D9999;
+}
+.menu ul{
+    margin: auto;
+}
+.menu li{
+    display: inline;
+    list-style: none;
+    padding: 10px 10px;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 25px;
+    color: white;
+}
+.menu a:hover{
+    color: #ffd700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+}
+@media screen and (min-width:60em){
+body{
+    font-size: 100%;
+}
+header div{
+    width: calc(30%);
+    position: relative;
+    margin: 0;
+}
+header p{
+    display: block;
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 30px;
+    font-size: 70px;
+    color: #ffd700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+header .redes{
+    padding: 30px;
+}
+.img_header img{
+    max-width: 100%;
+    padding-left: 1em;
+}
+.redes img{
+    width: 60px;
+    border-radius: 1em;
+    box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    transition: 0,3s;
+}
+.redes img:hover{
+    transform: scale(1.1);
+}
+.menu{
+    display: block;
+    margin: 0.5em 0em;
+    position: relative;
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu li{
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 2em;
+    color: white;
+}
+.menu a:hover{
+    color: #ffd700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+footer{
+    color: white;
+    font-family: fantasy;
+}
+footer h3{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: rgb(255, 247, 247);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.contenedor_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0px;
+    background-color: #2D9999;
+}
+.datos_footer{
+    text-align: left;
+}
+.contenedor_footer div{
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+.boton_contact{
+    background-color: #ffd700;
+    border-color: #ffd700;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 1em;
+    transition: 1s;
+}
+.boton_contact:hover{
+    border-color: #ffd700;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
+}
+.imagen_footer img{
+    width: 100%;
+}
+.menu_inf li{
+    list-style: none;
+    margin: 5px 0px;
+}
+.menu_inf a{
+    text-decoration: none;
+    color:  white;
+}
+.menu_inf a:hover{
+    text-decoration: underline;
+}
+.arriba{
+    display: block;
+    background-color: #ffd700;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-family: montserrat, sans-serif;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 2em;
+}
+}

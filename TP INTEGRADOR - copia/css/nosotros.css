@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url(../img/nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+h2{
+    display: block;
+    padding: 0.8em 0em;
+    text-align: center;
+    font-size: 6em;
+    font-family: montserrat, sans-serif;
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+h3{
+    font-size: 3em;
+    color: white;
+    margin: auto;
+    padding: 0.4em;
+    background-color: #2D9999;
+    border-radius: 1em;
+}
+.contenedorPersonitas{
+    padding: 1em 0em;
+}
+.contenedorPersonitas p {
+    background-color: white;
+    border-radius: 1em;
+    text-align: center;
+    color: #2D9999;
+    font-size: 2em;
+    padding: 5px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin: 1em 4em;
+}
+.personita {
+    text-align: center;
+}
+.personita img {
+    width: 50%;
+    border-radius: 50%;
+    height: auto;
+    margin-top: 25px;
+}
+.nosotros {
+    margin: 3em;
+}
+.nosotros h3{
+    font-size: 2em;
+}
+.nosotros p{
+    margin: 1em;
+    font-family: montserrat, sans-serif;
+    text-align: justify;
+    margin: 1em;
+    font-size: 1.5em;
+
+}
+.medio{
+    background-color: #2D9999;
+}
+@media screen and (min-width:47em){
+}
+@media screen and (min-width:60em){
+.banner{
+    background-image: url(../img/nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31.25em;   
+}
+h2{
+    display: block;
+    padding: 8%;
+    text-align: center;
+    font-size: 7em;
+    font-family: montserrat, sans-serif;
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+h3{
+    font-size: 3em;
+    color: white;
+    margin: auto;
+    padding: 0.4em;
+    background-color: #2D9999;
+    border-radius: 1em;
+}
+.contenedorPersonitas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorPersonitas p {
+    background-color: white;
+    border-radius: 1em;
+    text-align: center;
+    color: #2D9999;
+    font-size: 2em;
+    padding: 5px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin: 25px 70px;
+}
+
+.personita {
+    width: calc(33.33% - 5px);
+    text-align: center;
+}
+.personita img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    margin-top: 25px;
+}
+.nosotros {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nosotros h3{
+    font-size: 1.4em;
+}
+.nosotros p{
+    margin: 1em;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    margin: 1em;
+    text-align: justify;
+    font-size: 25px;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nosotros div{
+    width: calc(50%);
+    padding: 10px;
+}
+.contenedorNosotros, .contenedorPersonitas {
+    margin: 2% 15%;
+}
+.medio{
+    background-color: #2D9999;
+}
+}

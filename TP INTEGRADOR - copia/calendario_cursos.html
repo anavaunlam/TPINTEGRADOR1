@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/calendario_cursos.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calendario_curso.js"></script>
+    <script src="js/menuresponsive.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <div class="img_header">
+            <img src="../TP INTEGRADOR/img/tesol_ngl_logo.png" alt="logo" width="300">
+        </div>
+        <div>
+            <p>LEARNING TOGETHER</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/natgeola" target="_blank"><img src="../TP INTEGRADOR/img/face.png"
+                    alt="face"></a>
+            <a href="https://www.instagram.com/natgeo.la/" target="_blank"><img src="./img/insta.png" alt="insta"></a>
+            <a href="http://twitter.com/NatGeo_la" target="_blank"><img src="../TP INTEGRADOR/img/twitter2.png"
+                    alt="twitter"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">INICIO</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html" target="_blank">INSCRIPCIÓN</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html" target="_blank">ESTABLECIMIENTOS</a>
+                </li>
+                <li>
+                    <a href="calendario_cursos.html" target="_blank">CALENDARIO</a>
+                </li>
+                <li>
+                    <a href="contacto.html" target="_blank">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" target="_blank">NOSOTROS</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+    <main>
+        <section class="banner">
+        <h2 class="tituloPrincipal">Calendario de cursos</h2>
+    </section>
+        <section class="contenedorCalendario">
+            <section class="contenedorDeFiltros">
+                <button id="filtrar" class="botonfiltro">Filtrar</button>
+                <select name="filtro" id="establecimiento" class="filtro">
+                    <option value="0">Establecimiento</option>
+                    <option value="instituto1">Universidad Nacional de la Matanza</option>
+                    <option value="instituto2">Universidad Nacional de Córdoba</option>
+                    <option value="instituto3">Universidad Nacional de Entre Ríos</option>
+                    <option value="instituto4">Universidad Católica de Santa Fe</option>
+                </select>
+                <select name="filtro" id="idioma" class="filtro">
+                    <option value="0">Idioma</option>
+                    <option value="aleman">Alemán</option>
+                    <option value="chino">Chino</option>
+                    <option value="coreano">Coreano</option>
+                    <option value="frances">Francés</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="italiano">Italiano</option>
+                    <option value="portugues">Portugués</option>
+                    <option value="ruso">Ruso</option>
+                </select>
+                <button id="borrarfiltros" class="botonfiltro">Borrar</button>
+            </section>
+            <h3 class="tituloMes">Abril</h3>
+            <div class="contenedorCursos" id="cursos">
+                <article class="curso instituto1 frances">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/FRANCES-2021.jpg" alt="sede1"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Francés - Nivel 1</h4>
+                        <ul>
+                            <li>Modalidad: virtual</li>
+                            <li>Días y horarios: Lunes y Miércoles de 08:00 a 12:00</li>
+                            <li>Fecha de Inicio: 10 de Abril (1° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de la Matanza</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto2 aleman">
+                    <div class="cajaImagen"><img src="img/ALEMAN-2021.jpg" alt="sede2"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Alemán - Nivel 1</h4>
+                        <ul>
+                            <li>Modalidad: presencial</li>
+                            <li>Días y horarios: Martes y Jueves de 08:00 a 12:00</li>
+                            <li>Fecha de Inicio: 10 de Abril (1° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de Córdoba</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto3 coreano">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/COREANO-2021.jpg" alt="sede3"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Coreano - Nivel 1</h4>
+                        <ul>
+                            <li>Modalidad: virtual</li>
+                            <li>Días y horarios: Lunes y Miércoles de 14:00 a 18:00</li>
+                            <li>Fecha de Inicio: 10 de Abril (1° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de Entre Ríos</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto4 chino">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/CHINO-2021.jpg" alt="sede4"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Chino - Nivel 1</h4>
+                        <ul>
+                            <li>Modalidad: presencial</li>
+                            <li>Días y horarios: Martes y Jueves de 14:00 a 18:00</li>
+                            <li>Fecha de Inicio: 10 de Abril (1° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Católica de Santa Fe</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="tituloMes">Agosto</h3>
+
+            <div class="contenedorCursos" id="cursos">
+                <article class="curso instituto1 italiano">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/ITALIANO-2021.jpg" alt="sede1"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Italiano - Nivel 2</h4>
+                        <ul>
+                            <li>Modalidad: virtual</li>
+                            <li>Días y horarios: Lunes y Miércoles de 08:00 a 12:00</li>
+                            <li>Fecha de Inicio: 2 de Agosto (2° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de la Matanza</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto2 ingles">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/INGLES-2021.jpg" alt="sede2"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Inglés - Nivel 2</h4>
+                        <ul>
+                            <li>Modalidad: presencial</li>
+                            <li>Días y horarios: Martes y Jueves de 08:00 a 12:00</li>
+                            <li>Fecha de Inicio: 2 de Agosto (2° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de Córdoba</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto3 ruso">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/RUSO-2021.jpg" alt="sede3"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Ruso - Nivel 2</h4>
+                        <ul>
+                            <li>Modalidad: virtual</li>
+                            <li>Días y horarios: Lunes y Miércoles de 14:00 a 18:00</li>
+                            <li>Fecha de Inicio: 2 de Agosto (2° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Nacional de Entre Ríos</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+                <article class="curso instituto4 portugues" id="cursos">
+                    <div class="cajaImagen"><img src="../TP INTEGRADOR/img/PORTUGUES-2021.jpg" alt="sede4"></div>
+                    <div class="cajaInformacionDelCurso">
+                        <h4>Portugués - Nivel 2</h4>
+                        <ul>
+                            <li>Modalidad: presencial</li>
+                            <li>Días y horarios: Martes y Jueves de 14:00 a 18:00</li>
+                            <li>Fecha de Inicio: 2 de Agosto (2° cuatrimestre)</li>
+                            <li>Sede: <a href="sede1.html">Universidad Católica de Santa Fe</a></li>
+                            <li class="precio">Precio: $2000.-</li>
+                        </ul>
+                        <button>Inscribirse</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <a href="#inicio" class="arriba">Volver arriba</a>
+    </main>
+    <footer>
+        <aside class="contenedor_footer">
+            <div class="imagen_footer">
+                <img src="../TP INTEGRADOR/img/tesol_ngl_logo.png" alt="certi">
+            </div>
+            <div class="item">
+                <h3>Datos del grupo:</h3>
+                <p>Agustin Ezequiel Nava - 43.516.284</p>
+                <p>Agostina Jacqueline Herdeiro - 44.824.992</p>
+                <p>Candela Petrollini - 42.595.790</p>
+            </div>
+            <div class="item">
+                <nav class="menu_inf">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="inscripcion.html" target="_blank">INSCRIPCIÓN</a>
+                        </li>
+                        <li>
+                            <a href="establecimientos.html" target="_blank">ESTABLECIMIENTOS</a>
+                        </li>
+                        <li>
+                            <a href="calendario_cursos.html" target="_blank">CALENDARIO</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" target="_blank">CONTACTO</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" target="_blank">NOSOTROS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="redes">
+                <a href="./contacto.html" target="_blank"
+                    rel="noopener noreferrer"><button class="boton_contact">contactanos</button></a>
+                <h3>Redes Sociales</h3>
+                <a href="https://www.facebook.com/natgeola" target="_blank"><img src="./img/face.png" alt="face"></a>
+                <a href="https://www.instagram.com/natgeo.la/" target="_blank"><img src="./img/insta.png"
+                        alt="insta"></a>
+                <a href="http://twitter.com/NatGeo_la" target="_blank"><img src="../TP INTEGRADOR/img/twitter2.png"
+                        alt="twitter"></a>
+            </div>
+        </aside>
+    </footer>
+</body>
+
+</html>

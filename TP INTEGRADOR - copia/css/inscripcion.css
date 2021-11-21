@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    background-color: #EFF8FF;
+}
+.banner{
+    position: relative;
+    background-image: url(../img/banner_inscripcion.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31.25em;   
+}
+h2{
+    display: block;
+    padding: 8%;
+    text-align: center;
+    font-size: 7em;
+    font-family: montserrat, sans-serif;
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 0em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+font-size: 1.7em;
+text-align: center;
+color: #333;
+padding-bottom: 1em;
+}
+.negrita{
+    font-weight: bolder;
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 3em;
+    padding: 0.5em;
+    background-color: #2D9999;
+    color: white;
+}
+article{
+	padding: 10px;
+    margin-bottom:20px;
+}
+.contenedor{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.contenedor div{
+	box-sizing: border-box;
+    width: calc(50% - 10px);
+    padding: 0em 10em;
+}
+input{
+    text-align: start;
+    padding-left: 2em;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+input.error{
+    border:2px solid crimson;
+}
+.error{
+    color: crimson;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    display: block;
+    font-size: 1.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    color: crimson;
+}
